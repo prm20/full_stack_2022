@@ -1,0 +1,16 @@
+title Loading a page container JS SPA
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: POST request containing user content and timestamp
+
+note over browser:
+browser only sends one request to the server
+which is the post request as JSON data
+containing content and date
+end note
+
+
+note over browser:
+code uses getElementByID('notes_form)
+to fetch the form element and handle the submit
+end note
