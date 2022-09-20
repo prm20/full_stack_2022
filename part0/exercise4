@@ -1,6 +1,6 @@
 https://www.websequencediagrams.com/
 
-title Loading a page container JS
+title Loading a page containing JS
 
 browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
 server-->browser: sends user data input to server address new_note
