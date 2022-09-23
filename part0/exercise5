@@ -1,0 +1,27 @@
+https://www.websequencediagrams.com/
+
+title Loading a page container JS SPA
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: grabs html code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: grabs css code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: grabs js code
+
+note over browser:
+the single page app is just
+like the previous, however the
+difference is a SPA will load
+one HTML page, which is manipulated
+with JS (DOM manipulated)
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: grabs JSON code, which is all of the contents
+
+note over browser:
+browser only sends one request to the server
+which is the post request as JSON data
+containing content and date
+end note
